@@ -1,0 +1,209 @@
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Pretendard;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #F5F5f5;
+}
+body.swal2-shown{
+	padding: 0px !important;
+}
+.line-1skip {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.line-2skip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._scroll-y-event {
+	display: flex;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+}
+._scroll-y-event::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* 알림창 */
+.swal-alertButton {
+	height: 48px !important;
+	width: 100% !important;
+	border: 0 !important;
+	border-top: 1px solid #E8E8E8 !important;
+	/* border: none !important; */
+	outline: none !important;
+	box-shadow: none !important;
+	/* border-radius: 10px; */
+	border-radius: 0 0 20px 20px !important;
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	color: black !important;
+  background-color: white !important;
+  background-image: none !important;
+  margin: 0 !important;
+}
+
+.swal-confirmButton {
+	height: 48px !important;
+	width: 100% !important;
+	border: 0 !important;
+	border-top: 1px solid #E8E8E8 !important;
+	/* border: none !important; */
+	outline: none !important;
+	box-shadow: none !important;
+	/* border-radius: 10px; */
+	border-radius: 0 0 20px 0 !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: #8567FE !important;
+  background-color: white !important;
+  background-image: none !important;
+  margin: 0 !important;
+}
+
+.swal-cancelButton {
+	height: 48px !important;
+	width: 100% !important;
+	border: 0 !important;
+	border-top: 1px solid #E8E8E8 !important;
+	border-right: 1px solid #E8E8E8 !important;
+	/* border: none !important; */
+	outline: none !important;
+	box-shadow: none !important;
+	/* border-radius: 10px; */
+	border-radius: 0 0 0 20px !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: black !important;
+	/* margin-right: 13px; */
+  background-color: white !important;
+  background-image: none !important;
+  margin: 0 !important;
+}
+
+.swal-actions {
+	max-height: 48px !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+  flex-wrap: nowrap !important;
+	/* padding: 0 20px; */
+}
+
+.swal-actions1 {
+	max-height: 48px !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+	/* padding: 0 60px; */
+}
+
+.swal-popup {
+	border-radius: 20px !important;
+	/* padding-bottom: 40px; */
+	max-width: 448px !important;
+	width: 100% !important;
+  padding: 0 !important;
+}
+
+.swal-htmlContainer {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color:#616161 !important;
+	margin: 12px 20px 36px 20px !important;
+}
+
+.swal-htmlContainer2 {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	color: #616161 !important;
+	margin: 6px 20px 36px 20px !important;
+}
+
+.swal-title1 {
+	margin: 40px 20px 36px 20px !important;
+	color:#2A2A2A !important;
+	font-size:18px !important;
+	font-weight: 800 !important;
+	line-height: 25px !important;
+}
+
+.swal-title2 {
+	margin: 40px 20px 0 20px !important;
+	color:#2A2A2A !important;
+	font-size:18px !important;
+	font-weight: 800 !important;
+	line-height: 25px !important;
+}
+
+.swal2-close {
+  font-family: none !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+/* 알림창 끝 */
+
+.canvas {
+  height: 100vh;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+}
